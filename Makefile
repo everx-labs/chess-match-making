@@ -34,7 +34,7 @@ DIRS:=$(CCH) $(patsubst %,$(SYS)/%,$(TA)) games out
 all: cc
 
 install: dirs cc
-	$(TOC) config --url net.ton.dev --async_call=true
+	$(TOC) config --url net.ton.dev --async_call=true --balance_in_tons=true
 
 TOOLS_MAJOR_VERSION:=0.50
 TOOLS_MINOR_VERSION:=0
